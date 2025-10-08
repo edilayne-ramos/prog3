@@ -21,11 +21,10 @@ class Main {
             }
 
         } catch (FileNotFoundException e) {
-            System.out.println("Erro.");
+            System.out.println("Erro: Arquivo não encontrado.");
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo.");
         } finally {
-            // Fechando os streams
             try {
                 if (reader != null) {
                     reader.close();
