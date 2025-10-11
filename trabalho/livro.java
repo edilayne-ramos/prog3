@@ -49,8 +49,8 @@ public class livro extends Item {
     }
 
     public String exibirDetalhes() {
-        return "Livro: Título = " + getTitulo() + ", Descrição = " + getDescricao() + 
-               ", Data de Cadastro = " + getDataCadastro() + ", Autor = " + autor + 
-               ", Número de Páginas = " + numeroPaginas;
+        return "----------------LIVRO----------------\nTítulo = " + getTitulo() + "\nDescrição = " + getDescricao() + 
+               "\nData de Cadastro = " + getDataCadastro() + "\nAutor = " + autor + 
+               "\nNúmero de Páginas = " + numeroPaginas;
     }
 }

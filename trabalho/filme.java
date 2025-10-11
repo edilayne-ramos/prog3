@@ -49,8 +49,8 @@ public class filme extends Item {
     }
 
     public String exibirDetalhes() {
-        return "Filme: Título = " + getTitulo() + ", Descrição = " + getDescricao() + 
-               ", Data de Cadastro = " + getDataCadastro() + ", Diretor = " + diretor + 
-               ", Duração em Minutos = " + duracaoMinutos;
+        return "----------------FILME----------------\nTítulo = " + getTitulo() + "\nDescrição = " + getDescricao() + 
+               "\nData de Cadastro = " + getDataCadastro() + "\nDiretor = " + diretor + 
+               "\nDuração em Minutos = " + duracaoMinutos;
     }
 }

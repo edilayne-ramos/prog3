@@ -58,7 +58,7 @@ public class GerenciadorItens {
 
     public void adicionarItem(Item item) throws CampoVazioException {
         if (item == null) {
-            throw new IllegalArgumentException("Item não pode ser nulo.");
+            throw new IllegalArgumentException("Item não pode ser vazio.");
         }
         if (item.getTitulo() == null || item.getTitulo().isEmpty()) {
             throw new CampoVazioException("titulo");

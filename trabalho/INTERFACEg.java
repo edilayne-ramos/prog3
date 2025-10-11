@@ -39,7 +39,7 @@ public class INTERFACEg extends JFrame {
         JScrollPane scrollPane = new JScrollPane(txtAreaResultados);
 
         // Configuração da janela
-        setTitle("Gerenciador de Itens - Profª Tainá Isabela");
+        setTitle("Gerenciador de Itens");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 400);
     }
