@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class livro extends Item {
     private String autor;
     private int numeroPaginas;
-
+    
     public livro() {
         super();
         this.autor = "";
@@ -44,9 +44,12 @@ public class livro extends Item {
         this.numeroPaginas = numeroPaginas;
     }
 
-    @Override
+    public String exportar() {
+        return String.format("%s|%s|%s|Livro|%s|%d", getTitulo(), getDescricao(), getDataCadastro(), autor, numeroPaginas);
+    }
+
     public String exibirDetalhes() {
-        return "livro: Título = " + getTitulo() + ", Descrição = " + getDescricao() + 
+        return "Livro: Título = " + getTitulo() + ", Descrição = " + getDescricao() + 
                ", Data de Cadastro = " + getDataCadastro() + ", Autor = " + autor + 
                ", Número de Páginas = " + numeroPaginas;
     }

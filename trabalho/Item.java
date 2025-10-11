@@ -6,13 +6,6 @@ public abstract class Item implements Exportavel{
     private String descricao;
     private LocalDate dataCadastro;
 
-    public String exportar() {
-        return String.format("%s|%s|%s", titulo, descricao, dataCadastro);
-    }
-
-    public abstract String exibirDetalhes();
-    }
-    
     public Item() {
         this.titulo = "";
         this.descricao = "";
@@ -65,6 +58,10 @@ public abstract class Item implements Exportavel{
             throw new IllegalArgumentException("Data de cadastro não pode ser nula.");
         }
         this.dataCadastro = dataCadastro;
+    }
+
+    public String exportar() {
+        return String.format("%s|%s|%s", titulo, descricao, dataCadastro);
     }
 
     public abstract String exibirDetalhes();

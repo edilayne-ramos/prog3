@@ -44,9 +44,12 @@ public class filme extends Item {
         this.duracaoMinutos = duracaoMinutos;
     }
 
-    @Override
+   public String exportar() {
+        return String.format("%s|%s|%s|Filme|%s|%d", getTitulo(), getDescricao(), getDataCadastro(), diretor, duracaoMinutos);
+    }
+
     public String exibirDetalhes() {
-        return "filme: Título = " + getTitulo() + ", Descrição = " + getDescricao() + 
+        return "Filme: Título = " + getTitulo() + ", Descrição = " + getDescricao() + 
                ", Data de Cadastro = " + getDataCadastro() + ", Diretor = " + diretor + 
                ", Duração em Minutos = " + duracaoMinutos;
     }
